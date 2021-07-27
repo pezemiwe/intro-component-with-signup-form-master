@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      <div class="heading">Learn to code by watching others</div>
+      <div class="subheading">See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+        but understanding how developers think is invaluable.</div>
+    </div>
+    <div class="boxes">
+      <div class="label"><span class="bold"> Try it free 7 days</span> then $20/mo. thereafter</div>
+      <div class="white">
+        <form class="form" action="">
+          <div class="group">
+          <input class="box" id="fname" placeholder="First Name" type="text">
+          <div class="message">First Name cannot be empty</div>
+          <img src="./images/icon-error.svg" alt="" class="caution">
+          <img src="./images/done.svg" alt="" class="done">
+          </div>
+          <div class="group">
+          <input class="box" id="lname" placeholder="Last Name" type="text">
+          <div class="message">Last Name cannot be empty</div>
+          <img src="./images/icon-error.svg" alt="" class="caution">
+          <img src="./images/done.svg" alt="" class="done">
+           </div>
+          <div class="group">
+          <input class="box" id="address" placeholder="Email Address" type="email">
+          <div class="message">Looks like this is not an email</div>
+          <img src="./images/icon-error.svg" alt="" class="caution">
+          <img src="./images/done.svg" alt="" class="done">
+          </div>
+          <div class="group">
+          <input class="box" id="pword" placeholder="Password" type="password">
+          <div class="message">Password cannot be less than 6 characters</div>
+          <img src="./images/icon-error.svg" alt="" class="caution">
+          <img src="./images/done.svg" alt="" class="done">
+          </div>
+        </form>
+        <button class="free">CLAIM YOUR FREE TRIAL</button>
+        <div class="txt">By clicking the button, you are agreeing to our <span class="terms">Terms and Services</span></div>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  <script src="./script.js"></script>
+</body>
+</html>

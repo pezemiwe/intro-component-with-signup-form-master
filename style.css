@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background: url("./images/bg-intro-desktop.png"), hsl(0, 100%, 74%);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0px;
+}
+
+.container {
+    display: flex;
+    margin: 0 170px;
+}
+.text {
+    margin-top: 150px;
+    width: 90%;
+}
+.label {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    text-align: center;
+    background-color: hsl(248, 32%, 49%);
+    padding: 0px 0;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0px 7px 0px 0px hsla(0, 0%, 0%, 0.1);
+    color: hsl(0, 0%, 100%);
+    font-weight: 400;
+}
+.bold {
+    font-weight: 700;
+}
+.white {
+    height: 470px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 7px 0px 0px hsla(0, 0%, 0%, 0.1);
+}
+.group.error .white {
+    height: 500px;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+}
+.free {
+    display: grid;
+    place-items: center;
+    height: 50px;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 0px 0;
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    font-weight: 700px;
+    background-color: hsl(154, 59%, 51%);
+    border: none;
+    box-shadow: 0 4px 1px 0px rgb(3, 171, 78);
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+.free:hover {
+    background-color: hsl(154, 84%, 75%);
+}
+.txt {
+    font-weight: 600;
+    font-size: 10px;
+    width: auto;
+    text-align: center;
+    color: hsl(246, 25%, 77%);
+}
+.group {
+    /* visibility: hidden; */
+    position: relative;
+}
+.terms {
+    font-weight: 700;
+    color: hsl(0, 100%, 74%);
+}
+.terms:hover {
+    cursor: pointer;
+}
+.boxes {
+    width: 80%;
+    margin-left: 0px;
+}
+.box {
+    margin-bottom: 5px;
+    height: 50px;
+    border-radius: 5px;
+    padding: 15px 25px;
+    outline: none;
+    border: 1px solid hsla(249, 10%, 26%, 0.2);
+    font-weight: 700;
+    color: hsl(249, 10%, 26%);
+    caret-color: hsl(248, 32%, 49%);
+    width: 100%;
+}
+.group.error .box {
+    border: 1px solid hsl(0, 100%, 74%);
+}
+
+.group.success .box {
+    border: 1px solid hsl(147, 100%, 34%)
+}
+.caution {
+    visibility: hidden;
+    width: 7%;
+    position: absolute;
+    content: "";
+    top: 9px;
+    right: 15px;
+}
+
+.done {
+    visibility: hidden;
+    width: 7%;
+    position: absolute;
+    content: "";
+    top: 9px;
+    right: 15px;
+}
+.group.success .done {
+    visibility: visible;
+}
+
+.group.error .caution {
+    visibility: visible;
+}
+/* #caution1 {
+    position: absolute;
+} */
+.message {
+    visibility: hidden;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 10px;
+    color: hsl(0, 100%, 74%);
+}
+.group.error .message {
+    margin-bottom: 10px;
+    visibility: visible;
+}
+input:focus {
+    border: 1px solid hsl(249, 10%, 26%);
+}
+input::placeholder {
+    font-weight: 700;
+    color: hsla(249, 10%, 26%, 0.6);
+}
+.heading {
+    font-weight: 700;
+    font-size: 50px;
+    color: hsl(0, 0%, 100%);
+    margin-bottom: 20px;
+    line-height: 60px;
+}
+.subheading {
+    font-weight: 400;
+    font-size: 16px;
+    color: hsl(0, 0%, 100%);
+}
+
+
+@media screen and (max-width: 800px) {
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 0px;
+    }
+.text {
+    text-align: center;
+    margin: 20px 35px;
+}
+.label {
+    width: auto;
+    height: 80px;
+    padding: 0;
+    
+}
+.text {
+    margin-top: 50px;
+    width: 75%;
+}
+.heading {
+    font-size: 25px;
+    line-height: 30px;
+}
+.subheading {
+    font-size: 14px;
+}
+}
+
+
+@media screen and (width: 1024px) {
+/* .label {
+    font-size: 13px;
+} */
+.container {
+    margin: 0 100px;
+}
+}
