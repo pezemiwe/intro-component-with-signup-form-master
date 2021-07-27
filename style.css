@@ -26,10 +26,11 @@ body {
     width: 90%;
 }
 .label {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 50px;
-    text-align: center;
     background-color: hsl(248, 32%, 49%);
     padding: 0px 0;
     border-radius: 10px;
@@ -48,6 +49,7 @@ body {
     border-radius: 8px;
     box-shadow: 0px 7px 0px 0px hsla(0, 0%, 0%, 0.1);
 }
+
 .group.error .white {
     height: 500px;
 }
@@ -166,12 +168,14 @@ input::placeholder {
     font-size: 50px;
     color: hsl(0, 0%, 100%);
     margin-bottom: 20px;
+    margin-right: 10%;
     line-height: 60px;
 }
 .subheading {
     font-weight: 400;
     font-size: 16px;
     color: hsl(0, 0%, 100%);
+    margin-right: 10%;
 }
 
 
